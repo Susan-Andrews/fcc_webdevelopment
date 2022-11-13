@@ -1,0 +1,102 @@
+<!-- ITS THE FIRST SET OF QUESTION FOR THE RESPONSIVE WEB DESIGN COURSE.THE RESPONSE IS SENT TO THE ORIGINAL WEBSITE OF FCC,HENCE -->
+<!-- CAT PHOTO APP-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8"></meta>
+        <title>CatPhotoApp</title>
+      </head>
+      <body>
+        <main>
+          <h1>CatPhotoApp</h1>
+          <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+          </section>
+          <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+              <li>cat nip</li>
+              <li>laser pointers</li>
+              <li>lasagna</li>
+            </ul>
+            <figure>
+              <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+              <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+              <li>flea treatment</li>
+              <li>thunder</li>
+              <li>other cats</li>
+            </ol>
+            <figure>
+              <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+              <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+            </figure>
+          </section>
+          <section>
+            <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+              <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+              </fieldset>
+              <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+              </fieldset>
+              <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </main>
+        <footer>
+          <p>
+            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+          </p>
+        </footer>
+      </body>
+    </html>
+
+
+
+
+    <!--  THE VALUE POINTS FOR DEVELOPING THE APP
+        * <a href="link" target=_blank> is used to open the link in the new tab
+        * The figure element represents self-contained content and will allow you to associate an image with a caption.
+        * A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. For   example, <figcaption>A cute cat</figcaption> adds the caption A cute cat.it should be added after figure tag after img self     opening tag
+        * Emphasize the word love in the figcaption element by wrapping it in an emphasis em element.
+        * The strong element is used to indicate that some text is of strong importance or urgent.
+        * add a web form to collect information from users using form element.
+        * The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the   browser that the form data should be sent to the path /submit-url.
+        * The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing   and do not need closing tags.
+        * There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button,   or a control to let users select a file from their computer.Create a text field to get text input from a user by adding the   type   attribute with the value text to the input element.
+        * In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a   name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax   for an email address text field: <input type="text" name="email">.
+
+        * Placeholder text is used to give people a hint about what kind of information to enter into an input. For example, <input   type="text" placeholder="Email address">.
+        * To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an   input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input   element, making sure there is space between it and other attributes.
+        * Even though you added your button below the text input, they appear next to each other on the page. That's because both input    and button elements are inline elements, which don't appear on new lines.
+        The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type    attribute with the value submit to the button to make it clear that it is a submit button.
+        * Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-  closing.
+        * label elements are used to help associate the text for an input element with the input element itself (especially for   assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the   word cat also selects the corresponding radio button.
+        * Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically   deselects the other, both buttons must have a name attribute with the same value.
+
+        * The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level   elements, meaning that they appear on a new line.
+        * The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should    enter into that part of the form.
+        * There's another way to associate an input element's text with the element itself. You can nest the text within a label element   and add a for attribute with the same value as the input element's id attribute. <input id="loving" type="checkbox"> <label   for="loving">Loving</label>
+        * In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's   no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is   space between it and other attributes.
+        *  You should allow people to use their native language. Tell the browser to encode multiple languages by adding a meta element    as a child of the head element. Set its charset attribute to UTF-8.
+
+
+    -->
