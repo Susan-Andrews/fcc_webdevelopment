@@ -11,6 +11,7 @@ Its a project repo from responsive web design of fcc . The codes are based on th
 5. # ROTHKO PAINTING  ![image](https://user-images.githubusercontent.com/97679329/208156105-403a8be4-5f83-49be-85f6-7eb8142c8c92.png)
 6. # PHOTO GALLERY  ![image](https://user-images.githubusercontent.com/97679329/208237653-8ff4dcba-07fa-43ef-a87f-f0a46bf542f4.png)
 7. # NUTRITION LABEL   ![image](https://user-images.githubusercontent.com/97679329/209628637-0455aced-66c6-44f9-a3df-3d2ae01e7aaf.png)
+8. # ACCESSIBILITY QUIZ   ![image](https://user-images.githubusercontent.com/97679329/210096176-0fbb56c8-0c5d-4187-91b5-4ec028bf6554.png)
 
 
 
