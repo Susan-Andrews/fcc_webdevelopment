@@ -2,7 +2,7 @@
 <html>
   <head lang="en">
     <title>Survey form</title>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" />
   </head>
   
@@ -10,11 +10,28 @@
   <body>
     <h1  id="title">Survey form</h1>
     <p id="description">Please fill out this form with the required information</p>
-    <form id="survey-form" >
-        <div><label id="name-label" for="name">Enter Your First Name: </label> <input id="name"  placeholder="Enter your name" type="text" required /> </div>
-        <div><label id="email-label" for="email">Enter Your Email: </label> <input id="email"  placeholder="Enter your email id" type="email" name="email" required /></div>
-        <div><label id="number-label" for="number"> Age(optional)<input  id="number" placeholder="age" type="number" name="number" min="10" max="90" /></label></div>
-        <div><label>Select your current role</label>
+    <div id="formdiv">
+      <form id="survey-form" >
+        <div class="input-element">
+          <label id="name-label" for="name">Enter Your Name: </label> 
+          <br/>
+          <input id="name" type="text"  placeholder="Enter your name" required /> 
+        </div>
+
+        <div class="input-element">
+          <label id="email-label" for="email">Enter Your Email: </label> 
+          <br/>
+          <input id="email"  placeholder="Enter your email id" type="email" name="email"  required />
+        </div>
+
+        <div class="input-element">
+          <label id="number-label" for="number"> Age(optional)</label>
+          <br/>
+          <input  id="number" placeholder="age" type="number" name="number" min="10" max="90" />
+        </div>
+
+        <div class="input-element">
+          <label id="select-label">Select your current role</label>
           <select id="dropdown" name="dropdown">
             <option value="">(select one)</option>
             <option value="1">Student</option>
@@ -22,46 +39,53 @@
             <option value="3">Other</option>
           </select> 
         </div>
-        <div>
-          <label>Would you recommend fcc to others</label>
-          <label><input value="Definitely" type="radio" name="selection" checked/>Definitely</label>
-          <label><input value="Maybe" type="radio" name="selection"/>Maybe</label>
-          <label><input value="Not Sure" type="radio" name="selection" class="inline" />Not Sure</label>
+
+        <div class="input-element"> 
+          <div><label>Would you recommend AI to others?</label></div>
+          <div><label><input value="Definitely" type="radio" name="selection" checked/>Definitely</label></div>
+          <div><label><input value="Maybe" type="radio" name="selection"/>Maybe</label></div>
+          <div><label><input value="Not Sure" type="radio" name="selection" class="inline" />Not Sure</label></div>
         </div>
-        <div>
-          <label>Your favourite feature of fcc</label>
+
+        <div class="input-element">
+          <label>How do you know about AI?</label>
           <select id="dropdown" name="dropdown" required>
             <option value="">(select one)</option>
-            <option value="1">Easy projects</option>
-            <option value="2">Detailed courses</option>
-            <option value="3">Simple</option>
+            <option value="1">Social Media</option>
+            <option value="2">University</option>
+            <option value="3">Friends</option>
           </select> 
         </div>
 
-        <div>
-          <p>What would you like to see improved(Select all that apply)</p>
-          <div><label><input name="improve" value="more topics" type="checkbox" >"More projects"</label></div>
-          <div><label><input name="improve" value="computer based topics" type="checkbox" >"Computer based topics"</label></div>
-        </div>
-
-        <div>
-          <p>Provide a bio:</p>
-            <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Enter your suggestions here"></textarea>
-        </div>
-
-        <div>
-          <button type="submit" value="Submit"></button>
-        </div>
-
-
-
-
-
-
+        <div class="input-element">
+          <label>What do you like in AI models more ?</label>
+          <div><label><input name="improve" value="more topics" type="checkbox" >Chatbots</label></div>
+          <div><label><input name="improve" value="computer based topics" type="checkbox" >Imitates Human Cognition</label></div>
+          <div><label><input name="improve" value="more topics" type="checkbox" >Facial Recognition</label></div>
+          <div><label><input name="improve" value="more topics" type="checkbox" >Intelligent Robotics</label></div>
+          <div><label><input name="improve" value="more topics" type="checkbox" >Automate Simple and Repetitive Tasks</label></div>
+          <div><label><input name="improve" value="more topics" type="checkbox" >Deep Learning</label></div>
 
 
         </div>
 
-    </form>
+        <div class="input-element">
+          <label>What would you like to see in the performance of AI models?</label>
+          <div><textarea id="suggestions" type="text" name="suggestions" rows="3" cols="50" placeholder="Comment here"></textarea></div>
+        </div>
+
+        <div class="input-element">
+        <div><button id="submit" type="submit" value="Submit">Submit</button></div>
+        </div>
+
+
+       
+
+      </form>
+    </div>
+  
   </body>
 </html>
+
+
+

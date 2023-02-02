@@ -1,0 +1,48 @@
+#formdiv{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background-color: #25614e;
+    text-align: center;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form{
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;  /* adding left space*/
+    border-radius: 10px;
+    background-color: aliceblue;
+    color:#25614e;
+}
+input{
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+
+}
+.input-element{
+    margin: 10px; /*to include space btw each element*/
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+}
+
+select{
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+}
+
+#Submit{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
